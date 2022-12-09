@@ -2,7 +2,7 @@ name: createFileOnUbunutu
 on: push
 jobs:
   create_file:
-    if: github.event_name == "push"
+    if: github.event_name == push
     runs-on: ubuntu-latest
     steps: 
       - name: print_name
