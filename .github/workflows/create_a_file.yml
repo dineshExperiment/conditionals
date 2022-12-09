@@ -1,1 +1,11 @@
+name: create_a_file
+on:push
 
+jobs:
+  create_file:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: makeDirectory
+        run:  mkdir mytestFile
+      - name: create_file
+        run: > testfile.txt
