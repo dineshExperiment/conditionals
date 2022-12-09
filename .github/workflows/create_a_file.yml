@@ -9,3 +9,5 @@ jobs:
           mkdir mytestdir
           cd mytestdir       
           touch test.txt
+          pwd
+          ls -l
