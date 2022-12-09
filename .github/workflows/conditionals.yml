@@ -1,4 +1,4 @@
-name: createFileOnUbunutu
+name: conditionals
 on: [push,create]
 jobs:
   printPush:
