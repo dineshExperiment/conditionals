@@ -1,6 +1,5 @@
-name: create_a_file
-on:push
-
+name: createFileOnUbunutu
+on: push
 jobs:
   create_file:
     runs-on: ubuntu-latest
@@ -8,4 +7,4 @@ jobs:
       - name: makeDirectory
         run:  mkdir mytestFile
       - name: create_file
-        run: > testfile.txt
+        run:  touch test.txt
