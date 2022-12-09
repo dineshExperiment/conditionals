@@ -2,12 +2,8 @@ name: createFileOnUbunutu
 on: push
 jobs:
   create_file:
+    if: github.event_name == "create"
     runs-on: ubuntu-latest
     steps: 
-      - name: makeDirectory
-        run: |
-          mkdir mytestdir
-          cd mytestdir       
-          touch test.txt
-          pwd
-          ls -l
+      - name: print_name
+        run: echo "dinesh"
