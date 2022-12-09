@@ -12,4 +12,4 @@ jobs:
      runs-on: ubuntu-latest
      steps: 
       - name: print_event_name
-        run: echo "Did you create a branch or add a tag ?"
+        run: echo "Did you create a branch or a tag ?"
