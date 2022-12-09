@@ -1,9 +1,15 @@
 name: createFileOnUbunutu
-on: push
+on: [push,create]
 jobs:
-  create_file:
-    if: github.event_name == 'create'
+  printPush:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps: 
-      - name: print_name
-        run: echo "dinesh"
+      - name: print_event_name
+        run: echo "this is push event"
+  printCreate:
+     if: github.event_name == 'create'
+     runs-on: ubuntu-latest
+     steps: 
+      - name: print_event_name
+        run: echo "Did you create a branch or add a tag ?"
