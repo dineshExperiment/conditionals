@@ -5,8 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: makeDirectory
-        run:  
-          mkdir mytestFile
-          cd mytestFile        
-      - name: create_file
-        run:  touch test.txt
+        run: |
+          mkdir mytestdir
+          cd mytestdir       
+          touch test.txt
